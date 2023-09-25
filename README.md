@@ -1,3 +1,5 @@
+> Modified to work in standalone Docker 25/09/23
+
 # Home Assistant Add-on: BatMON
 
 ![Home Assistant Dashboard Screenshot](https://repository-images.githubusercontent.com/445289350/03f3d531-37cf-48be-84c8-e6c75270fc87)
