@@ -13,7 +13,7 @@ if user_config.get('install_newer_bleak'):
     args = ['install', 'bleak==0.20.2']
 else:
     ver = '0.13.1a1'
-    args = ['install', 'git+https://github.com/jpeters-ml/bleak@feature/windowsPairing']
+    args = ['--break-system-packages', 'install', 'git+https://github.com/jpeters-ml/bleak@feature/windowsPairing']
 
 installed_ver = bleak_version()
 if installed_ver == ver:
