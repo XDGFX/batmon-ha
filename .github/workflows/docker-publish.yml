@@ -72,9 +72,5 @@ jobs:
           tags: ${{ steps.meta.outputs.tags }}
           platforms: linux/amd64,linux/arm64
           file: ./docker/prod/Dockerfile
-          cache-from: |
-            type=local,src=/tmp/.buildx-cache
-            type=local,src=${{ steps.composer-cache.outputs.dir }}
-          cache-to: |
-            type=local,dest=/tmp/.buildx-cache
-            type=local,dest=${{ steps.composer-cache.outputs.dir }}
+          cache-from: type=gha
+          cache-to: type=gha,mode=max
