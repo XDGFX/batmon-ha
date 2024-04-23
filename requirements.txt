@@ -5,8 +5,8 @@ git+https://github.com/jpeters-ml/bleak@feature/windowsPairing
 
 # bleak==0.20.2
 
-paho-mqtt
-backoff
-crcmod
+paho-mqtt==1.6.1
+backoff==2.2.1
+crcmod==1.7
 
 # influxdb
